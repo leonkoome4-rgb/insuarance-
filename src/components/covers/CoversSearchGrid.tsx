@@ -52,8 +52,8 @@ export default function CoversSearchGrid() {
           variants={staggerContainer(0.08)}
           className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {filtered.map((cover) => (
-            <CoverCard key={cover.slug} cover={cover} />
+          {filtered.map((cover, index) => (
+            <CoverCard key={cover.slug} cover={cover} usePhoto priority={index < 3} />
           ))}
         </motion.div>
       )}

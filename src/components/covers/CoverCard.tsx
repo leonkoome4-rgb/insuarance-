@@ -11,9 +11,11 @@ import { COVER_HERO_PHOTOS } from "@/lib/cover-photos";
 export default function CoverCard({
   cover,
   usePhoto = false,
+  priority = false,
 }: {
   cover: Cover;
   usePhoto?: boolean;
+  priority?: boolean;
 }) {
   const photo = usePhoto ? COVER_HERO_PHOTOS[cover.slug] : undefined;
 
@@ -29,6 +31,8 @@ export default function CoverCard({
             alt={photo?.alt ?? `${cover.name} illustration`}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            priority={priority}
+            loading={priority ? "eager" : undefined}
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
