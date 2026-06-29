@@ -41,7 +41,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-emerald-400"
+            className="inline-flex items-center gap-2 rounded-full border border-metro-trust-400/30 bg-metro-trust-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-metro-trust-400"
           >
             <ShieldCheck size={14} />
             Licensed by the Insurance Regulatory Authority (IRA)

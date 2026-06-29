@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1b2563;
+  --foreground: #181f5c;
 }
 
 @theme inline {
@@ -25,8 +25,13 @@
   --color-metro-orange-500: #f4791f;
   --color-metro-orange-600: #d9620e;
 
-  --color-metro-navy-600: #2b3a8f;
-  --color-metro-navy-800: #1b2563;
+  --color-metro-navy-600: #2d3a99;
+  --color-metro-navy-800: #181f5c;
+
+  /* Trust accent — for licensing/security signals (badges, confirmations) */
+  --color-metro-trust-400: #3fd9a8;
+  --color-metro-trust-500: #16b88a;
+  --color-metro-trust-600: #0e9b73;
 }
 
 html {
@@ -46,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ::selection {
   background-color: rgba(244, 121, 31, 0.22);
-  color: #1b2563;
+  color: #181f5c;
 }
 
 ::-webkit-scrollbar {

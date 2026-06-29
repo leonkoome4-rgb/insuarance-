@@ -24,7 +24,7 @@ export default function QuoteResult({
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="flex flex-col items-center text-center"
     >
-      <CheckCircle2 size={48} className="text-metro-orange-500" />
+      <CheckCircle2 size={48} className="text-metro-trust-500" />
       <h2 className="mt-4 font-display text-2xl font-semibold text-metro-navy-800">
         Your Estimated Premium
       </h2>
