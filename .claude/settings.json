@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"existing server check: %{http_code}\\\\n\" http://localhost:3001/)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(kill 2446)",
+      "Bash(pkill -f \"next dev -p 3001\")",
+      "Bash(nohup npm run dev -- -p 3001)",
+      "Bash(disown)",
+      "Bash(echo \"started pid $!\")",
+      "Bash(curl -s http://localhost:3001/quote/motor -o /dev/null -w \"status: %{http_code}\\\\n\")"
+    ]
+  }
+}
