@@ -63,7 +63,7 @@ export default function CoverHero({ cover }: { cover: Cover }) {
                   </a>
                 </div>
               </div>
-              <Link href={cover.slug === "motor" ? "/quote/motor" : "/contact"}>
+              <Link href={cover.slug === "motor" ? "/quote/motor" : `/quote/${cover.slug}`}>
                 <Button variant="primary" className="w-full sm:w-auto">
                   {cover.ctaLabel === "Learn More" ? "Get a Quote" : cover.ctaLabel}
                 </Button>

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ShieldCheck, Info } from "lucide-react";
 import Button from "@/components/ui/Button";
+import PayWithMpesa from "@/components/payments/PayWithMpesa";
 import { formatKES } from "@/lib/motor-quote";
 import { COVER_TYPE_LABELS } from "@/lib/motor-quote-labels";
 import type { MotorCoverType, MotorQuoteResult } from "@/types";
@@ -79,6 +80,14 @@ export default function QuoteResult({
         <ShieldCheck size={14} className="mt-0.5 shrink-0 text-metro-navy-600" />
         This is an indicative estimate. A licensed advisor will confirm your final
         premium with our underwriting partners before you commit to anything.
+      </div>
+
+      <div className="mt-6 w-full max-w-sm">
+        <PayWithMpesa
+          amount={result.totalPremium}
+          reference="MotorPremium"
+          description="Motor Insurance"
+        />
       </div>
 
       <Button type="button" variant="secondary" className="mt-6" onClick={onReset}>

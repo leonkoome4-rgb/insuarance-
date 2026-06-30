@@ -19,7 +19,7 @@ export const FOOTER_LINKS: NavLink[] = [
 
 export const PHONE_NUMBERS = ["+254 793 671541", "+254 768 422931", "+254 768 422903"];
 
-export const COMPANY_EMAIL = "info@superminsurance.co.ke";
+export const COMPANY_EMAIL = "brand@tribe.co.ke";
 
 export const SOCIAL_LINKS = [
   { label: "Facebook", href: "https://facebook.com" },

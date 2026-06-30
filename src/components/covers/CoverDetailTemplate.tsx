@@ -12,12 +12,8 @@ export default function CoverDetailTemplate({ cover }: { cover: Cover }) {
       <InsuranceProcess />
       <CtaBanner
         title={`Protect what matters with ${cover.name}`}
-        subtitle={
-          cover.slug === "motor"
-            ? "Get an instant premium estimate in minutes — answer a few quick questions about your car."
-            : "Get a tailored quote in minutes — our team will match you with the right underwriter."
-        }
-        quoteHref={cover.slug === "motor" ? "/quote/motor" : "/contact"}
+        subtitle="Get an instant premium estimate in minutes — answer a few quick questions to get started."
+        quoteHref={cover.slug === "motor" ? "/quote/motor" : `/quote/${cover.slug}`}
       />
     </>
   );
